@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load survey_extras %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+<h1 class="survey-title">Welcome to {{department.name|title}}</h1>
+<div class="survey-description">
+	{{survey.description|safe}}
+</div>
+
+<div>
+
+<form method="post" novalidate>
+  	{% csrf_token %}
+	{% include 'messages.html' %}
+	{{ response_form|crispy }}
+    <input class="btn btn-custom" type="submit" value="I'm done!">
+</form>
+</div>
+
+{% endblock %}
+
+{% block extrajs %}
+	<script src="/media/js/jquery.collapsible.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//collapsible management
+			$('.collapsible').collapsible({defaultOpen: 'response_metadata'});
+		});
+
+	</script>
+{% endblock %}

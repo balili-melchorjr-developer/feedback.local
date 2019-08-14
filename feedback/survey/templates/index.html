@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="intro">
+<h1>Welcome to Adventist Medical Center Manila</h1>
+
+<div>
+{% if department_list %}
+    <ul>
+    {% for department in department_list %}
+        <li><a href="{% url 'survey_detail' department.id %}">{{ department.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p> No polls are available.</p>
+{% endif %}
+</div>
+</div>
+
+{% endblock %}

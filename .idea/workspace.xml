@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ebda54d-b498-46f0-8826-2b30670ac25a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/survey/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/survey/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+              <folding>
+                <element signature="e#27#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/survey/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/media/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feedback/survey/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/survey/templates/survey.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feedback/survey/templates/messages.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#214#221#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>req</find>
+      <find>10</find>
+      <find>q</find>
+      <find>question</find>
+      <find>response_f</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mac/manager/templates/base_login.html" />
+        <option value="$PROJECT_DIR$/mac/mac/settings.py" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/student_list.html" />
+        <option value="$PROJECT_DIR$/mac/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/address_detail.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/address_form.html" />
+        <option value="$PROJECT_DIR$/mac/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/citizenship_form.html" />
+        <option value="$PROJECT_DIR$/mac/manager/models.py" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/denomination_form.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/denomination_detail.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/address_list.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/base_generic.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/denomination_confirm_delete.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/citizenship_confirm_delete.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/citizenship_detail.html" />
+        <option value="$PROJECT_DIR$/mac/mac/urls.py" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/citizenship.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/includes/partial_citizenship_create.html" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/citizenship_list.html" />
+        <option value="$PROJECT_DIR$/mac/manager/urls.py" />
+        <option value="$PROJECT_DIR$/mac/static/js/main.js" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/denomination_list.html" />
+        <option value="$PROJECT_DIR$/mac/manager/views.py" />
+        <option value="$PROJECT_DIR$/mac/manager/templates/manager/student_form.html" />
+        <option value="$PROJECT_DIR$/mac/manager/forms.py" />
+        <option value="$PROJECT_DIR$/feedback/votes/urls.py" />
+        <option value="$PROJECT_DIR$/feedback/votes/templates/detail.html" />
+        <option value="$PROJECT_DIR$/feedback/votes/admin.py" />
+        <option value="$PROJECT_DIR$/feedback/votes/templates/index.html" />
+        <option value="$PROJECT_DIR$/feedback/votes/templates/results.html" />
+        <option value="$PROJECT_DIR$/feedback/votes/models.py" />
+        <option value="$PROJECT_DIR$/feedback/votes/views.py" />
+        <option value="$PROJECT_DIR$/feedback/pages/models.py" />
+        <option value="$PROJECT_DIR$/feedback/pages/views.py" />
+        <option value="$PROJECT_DIR$/feedback/products/models.py" />
+        <option value="$PROJECT_DIR$/feedback/products/admin.py" />
+        <option value="$PROJECT_DIR$/feedback/survey/admin.py" />
+        <option value="$PROJECT_DIR$/feedback/templates/base.html" />
+        <option value="$PROJECT_DIR$/feedback/feedback/urls.py" />
+        <option value="$PROJECT_DIR$/feedback/survey/urls.py" />
+        <option value="$PROJECT_DIR$/feedback/survey/models.py" />
+        <option value="$PROJECT_DIR$/feedback/survey/templates/index.html" />
+        <option value="$PROJECT_DIR$/feedback/feedback/settings.py" />
+        <option value="$PROJECT_DIR$/feedback/survey/templatetags/message.html" />
+        <option value="$PROJECT_DIR$/feedback/survey/templates/base.html" />
+        <option value="$PROJECT_DIR$/feedback/survey/templates/messages.html" />
+        <option value="$PROJECT_DIR$/feedback/survey/views.py" />
+        <option value="$PROJECT_DIR$/feedback/survey/forms.py" />
+        <option value="$PROJECT_DIR$/feedback/survey/templates/survey.html" />
+        <option value="$PROJECT_DIR$/feedback/media/css/custom.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1599" />
+    <option name="y" value="-4" />
+    <option name="width" value="1922" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="survey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="survey" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="survey" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/feedback/survey/templates" />
+      <recent name="$PROJECT_DIR$/feedback/survey" />
+      <recent name="$PROJECT_DIR$/feedback" />
+      <recent name="$PROJECT_DIR$/mac/manager/templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="django-apps" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mac/manager" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mac/manager/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ebda54d-b498-46f0-8826-2b30670ac25a" name="Default Changelist" comment="" />
+      <created>1555639563773</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555639563773</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1664" y="-4" width="1857" height="990" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22106987" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996063" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32874015" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17342342" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/student_list.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/denomination_confirm_delete.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/citizenship_confirm_delete.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/citizenship_detail.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/citizenship.html" />
+    <entry file="file://$PROJECT_DIR$/mac/mac/urls.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="1734" selection-start-line="1734" selection-end-line="1734" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/includes/partial_citizenship_create.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/denomination_list.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/citizenship_list.html" />
+    <entry file="file://$PROJECT_DIR$/mac/static/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/base_generic.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/citizenship_form.html" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/forms.py" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/models.py" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/urls.py" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/views.py" />
+    <entry file="file://$PROJECT_DIR$/mac/manager/templates/manager/student_form.html" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/apps.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/admin.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/templates/results.html" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/models.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/views.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/urls.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/votes/templates/detail.html" />
+    <entry file="file://$PROJECT_DIR$/feedback/pages/admin.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/pages/models.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/pages/views.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/products/views.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/products/admin.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/products/models.py" />
+    <entry file="file://$PROJECT_DIR$/feedback/survey/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/feedback/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/templates/confirm.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/templates/privacy.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/media/js/jquery-ui-1.9.1.custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/media/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/feedback/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/media/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/media/js/jquery-1.8.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <element signature="e#27#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/media/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/templates/survey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/templates/messages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#214#221#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedback/survey/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
