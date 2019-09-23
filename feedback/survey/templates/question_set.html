@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="department-list">
+    {% if questionset_list %}
+        <ul>
+        {% for questionset in questionset_list %}
+            <li><a class="department-link" href="{% url 'survey_detail' questionset.id %}"  >{{ questionset.name }}</a></li>
+        {% endfor %}    
+        </ul>
+    {% else %}
+        <p> No polls are available.</p>
+    {% endif %}
+    </div> 
+{% endblock %}

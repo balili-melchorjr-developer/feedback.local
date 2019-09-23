@@ -4,22 +4,6 @@ from .models import Department, QuestionSet, Question, Response, AnswerBase, Ans
 
 # Register your models here.
 
-
-class QuestionInline(admin.TabularInline):
-    model = Question
-    # ordering = ("question_set")
-    extra = 0
-
-
-class QuestionSetInline(admin.TabularInline):
-    model = QuestionSet
-    extra = 0
-
-
-class DepartmentAdmin(admin.ModelAdmin):
-    inlines = [QuestionInline, QuestionSetInline]
-
-
 class AnswerBaseInline(admin.StackedInline):
     fields = ("question", "body")
     # readonly_fields = ("question")
@@ -53,5 +37,7 @@ class ResponseAdmin(admin.ModelAdmin):
     # readonly_fields = ("department", "date_created", "date_modified", "customer_uuid")
 
 
-admin.site.register(Department, DepartmentAdmin)
+admin.site.register(Department)
 admin.site.register(Response, ResponseAdmin)
+admin.site.register(Question)
+admin.site.register(QuestionSet)

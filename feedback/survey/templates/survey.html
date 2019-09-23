@@ -4,20 +4,23 @@
 
 {% block body %}
 
-<h1 class="survey-title">Welcome to {{department.name|title}}</h1>
+<h1 class="survey-title">Welcome to {{department.name|title}} Survey</h1>
 <div class="survey-description">
 	{{survey.description|safe}}
 </div>
 
 <div>
-
-<form method="post" novalidate>
-  	{% csrf_token %}
-	{% include 'messages.html' %}
-	{{ response_form|crispy }}
-    <input class="btn btn-custom" type="submit" value="I'm done!">
-</form>
-</div>
+	<form method="post" novalidate>
+		{% csrf_token %}
+		{% include 'messages.html' %}
+		{{ response_form|crispy }}	
+		{% if response_form %} 
+		<input class="btn btn-custom" type="submit" value="I'm done!">
+		{% else %}
+		<p>No question available.</p>
+		{% endif %}
+	</form>
+</div>	
 
 {% endblock %}
 

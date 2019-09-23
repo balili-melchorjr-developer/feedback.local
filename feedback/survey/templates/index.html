@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
+<div class="grid-index">
 <div id="intro">
 <h1>Welcome to Adventist Medical Center Manila</h1>
 
-<div>
+<div class="department-list">
 {% if department_list %}
     <ul>
     {% for department in department_list %}
-        <li><a href="{% url 'survey_detail' department.id %}">{{ department.name }}</a></li>
+        <li><a class="department-link" href="{% url 'survey_select' department.id %}">{{ department.name }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p> No polls are available.</p>
 {% endif %}
+</div>
 </div>
 </div>
 

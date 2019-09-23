@@ -29,7 +29,7 @@ class ResponseForm(forms.ModelForm):
         data = kwargs.get('data')
         for q in department.question():
             if q.question_type == Question.TEXT:
-                self.fields["question_%d" % q.pk] = forms.CharField(label=q.text, widget=forms.Textarea(attrs={'class':'question-text'}))
+                self.fields["question_%d" % q.pk] = forms.CharField(label=q.text, widget=forms.Textarea(attrs={'class':'question-text', 'rows': 2, 'cols': 15}))
             elif q.question_type == Question.RADIO:
                 question_choices = q.get_choices()
                 self.fields["question_%d" % q.pk] = forms.ChoiceField(label=q.text, widget=forms.RadioSelect, choices=question_choices)

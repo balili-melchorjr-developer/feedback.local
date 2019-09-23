@@ -92,8 +92,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'surveydatabase',
-        'USER': 'root',
-        'PASSWORD': 'flash101',
+        'USER': 'admin',
+        'PASSWORD': 'password101',
         'HOST': 'localhost',
         'PORT': '',
     }
