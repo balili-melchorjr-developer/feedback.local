@@ -1,8 +1,22 @@
-{% for message in messages %}
+<!-- {% for message in messages %}
   <div class="alert {{ message.tags }} alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
     {{ message }}
   </div>
+{% endfor %} -->
+
+{% for message in messages %}
+<div class="modal alert" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h1>Thank you for your feedback.</h1>
+        <p class="alert-para">Sharing Jesus Christ's Healing Ministry</p>
+        <img src="/media/img/amcm-logo-namex.png">
+      </div>
+    </div>
+  </div>
+</div>
 {% endfor %}

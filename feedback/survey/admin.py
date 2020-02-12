@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Department, QuestionSet, Question, Response, AnswerBase, AnswerText, AnswerRadio, AnswerSelect, AnswerSelectMultiple, AnswerInteger
+from .models import Questionnaire, Department, QuestionSet, Question, Response, AnswerBase, AnswerText, AnswerRadio, AnswerSelect, AnswerSelectMultiple, AnswerInteger
 
 
 # Register your models here.
@@ -41,3 +41,4 @@ admin.site.register(Department)
 admin.site.register(Response, ResponseAdmin)
 admin.site.register(Question)
 admin.site.register(QuestionSet)
+admin.site.register(Questionnaire)

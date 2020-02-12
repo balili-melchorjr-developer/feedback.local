@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import widgets
 from django.forms import models
-from .models import Department, QuestionSet, Question, Response, AnswerText, AnswerRadio, AnswerSelect, AnswerSelectMultiple, AnswerInteger
+from .models import Questionnaire, Department, QuestionSet, Question, Response, AnswerText, AnswerRadio, AnswerSelect, AnswerSelectMultiple, AnswerInteger
 from django.utils.safestring import mark_safe
 import uuid
 
@@ -19,20 +19,20 @@ class ResponseForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         # expects a survey object to be a passed in initially
-        department = kwargs.pop('department')
-        self.department = department
+        questionnaire = kwargs.pop('questionnaire')
+        self.questionnaire = questionnaire
         super(ResponseForm, self).__init__(*args, *kwargs)
         self.uuid = random_uuid = uuid.uuid4().hex
 
         # add a field for each survey question, corresponding to the question
         # type as appropriate.
         data = kwargs.get('data')
-        for q in department.question():
+        for q in questionnaire.question():
             if q.question_type == Question.TEXT:
                 self.fields["question_%d" % q.pk] = forms.CharField(label=q.text, widget=forms.Textarea(attrs={'class':'question-text', 'rows': 2, 'cols': 15}))
             elif q.question_type == Question.RADIO:
                 question_choices = q.get_choices()
-                self.fields["question_%d" % q.pk] = forms.ChoiceField(label=q.text, widget=forms.RadioSelect, choices=question_choices)
+                self.fields["question_%d" % q.pk] = forms.ChoiceField(label=q.text, choices=question_choices, initial=0, widget=forms.RadioSelect)
                 # self.fields["question_%d" % q.pk].widget.attrs.update({'class': 'form-check-inline'})
             elif q.question_type == Question.SELECT:
                 question_choices = q.get_choices()
@@ -71,7 +71,7 @@ class ResponseForm(forms.ModelForm):
     def save(self, commit=True):
         # save the response object
         response = super(ResponseForm, self).save(commit=False)
-        response.department = self.department
+        response.questionnaire = self.questionnaire
         response.customer_uuid = self.uuid
         response.save()
 

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="grid-index">
+<div id="intro">
+<h1>Welcome to AMC Manila Survey</h1>
+
+<div class="department-list">
+{% if questionnaire_list %}
+    <ul>
+    {% for questionnaire in questionnaire_list %}
+        <li><a class="department-link" href="{% url 'survey' id=questionnaire.id %}">{{ questionnaire.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p> No polls are available.</p>
+{% endif %}
+</div>
+</div>  
+</div>
+
+{% endblock %}

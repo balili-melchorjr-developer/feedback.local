@@ -1,9 +1,6 @@
 # Create your models here.
 from django.db import models
 from django.core.exceptions import ValidationError
-from django.db import models
-from django.core.exceptions import ValidationError
-
 
 class Department(models.Model):
     name = models.CharField(max_length=120)
@@ -14,16 +11,9 @@ class Department(models.Model):
     def __str__(self):
         return self.name
 
-    def question(self):
-        if self.pk:
-            return Question.objects.filter(department=self.pk)
-        else:
-            return None
-
-
-class QuestionSet(models.Model):
-    department = models.ForeignKey(Department, on_delete=models.CASCADE)
-    name = models.CharField(max_length=200)
+class Questionnaire(models.Model):
+    name = models.CharField(max_length=120)
+    department = models.ForeignKey(Department, on_delete=models.CASCADE, verbose_name='Department')
     status = models.BooleanField()
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
@@ -31,6 +21,32 @@ class QuestionSet(models.Model):
     def __str__(self):
         return self.name
 
+    def question(self):
+        if self.pk:
+            return Question.objects.filter(questionnaire=self.pk)
+        else:   
+            return None
+
+    
+class QuestionSet(models.Model):
+    questionnaire = models.ForeignKey(Questionnaire, on_delete=models.CASCADE, verbose_name='Questionnaire')
+    name = models.CharField(max_length=200)
+    status = models.BooleanField()
+    date_created = models.DateTimeField(auto_now_add=True)
+    date_modified = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Question Set'
+        verbose_name_plural = 'Question Sets'
+
+    def __str__(self):
+        return self.name
+
+    # def question(self): # Originally in Deparment Models
+    #     if self.pk:
+    #         return Question.objects.filter(question_set=self.pk)
+    #     else:
+    #         return None
 
 def validate_list(value):
     ''' takes a text value and verifies that there is at least one comma '''
@@ -39,7 +55,7 @@ def validate_list(value):
         raise ValidationError("The selected field requires an associated list of choices. Choices must contain more than one item.")
 
 
-class Question(models.Model):
+class Question(models.Model): 
     TEXT = 'text'
     RADIO = 'radio'
     SELECT = 'select'
@@ -57,7 +73,7 @@ class Question(models.Model):
     text = models.TextField()
     required = models.BooleanField()
     question_set = models.ForeignKey(QuestionSet, on_delete=models.CASCADE)
-    department = models.ForeignKey(Department, on_delete=models.CASCADE)
+    questionnaire = models.ForeignKey(Questionnaire, on_delete=models.CASCADE, verbose_name='Questionnaire')
     question_type = models.CharField(max_length=200, choices=QUESTION_TYPES, default=TEXT)
     choices = models.TextField(blank=True, null=True,
             help_text='if the question type is "radio," "select," or "select multiple" provide a comma-separated list of options for this question.')
@@ -90,13 +106,12 @@ class Response(models.Model):
     # a unique interview uuid
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
-    department = models.ForeignKey(Department, on_delete=models.CASCADE)
+    questionnaire = models.ForeignKey(Questionnaire, on_delete=models.CASCADE)
     customer = models.CharField(max_length=200)
     customer_uuid = models.CharField("Interview unique identifier", max_length=36)
-
+        
     def __unicode__(self):
         return "response %s" % self.customer_uuid
-
 
 class AnswerBase(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
@@ -107,7 +122,6 @@ class AnswerBase(models.Model):
 # these type-specific answer models user a text field to allow for flexible
 # field sizes depending on the actual question this answer corresponds to. any
 # "required" attribute will be enforced by the form.
-
 
 class AnswerText(AnswerBase):
     body = models.TextField(blank=True, null=True)

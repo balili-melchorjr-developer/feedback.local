@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="department-list">
+    {% if quesitonset_detail %}
+        <ul>
+        {% for questionset in questionset_detail %}
+            <li><a class="department-link" href=>{{ questionset.name }}</a></li>
+        {% endfor %}    
+        </ul>
+    {% else %}  
+        <p>No Questions Available.</p>
+    {% endif %}
+    </div> 
+{% endblock %}

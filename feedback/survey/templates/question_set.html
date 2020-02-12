@@ -5,11 +5,11 @@
     {% if questionset_list %}
         <ul>
         {% for questionset in questionset_list %}
-            <li><a class="department-link" href="{% url 'survey_detail' questionset.id %}"  >{{ questionset.name }}</a></li>
+            <li><a class="department-link" href="{% url 'test-survey' id=questionset.department.id %}">{{ questionset.name }}</a></li>
         {% endfor %}    
         </ul>
-    {% else %}
-        <p> No polls are available.</p>
+    {% else %}  
+        <p>No Questions Available.</p>
     {% endif %}
     </div> 
 {% endblock %}
