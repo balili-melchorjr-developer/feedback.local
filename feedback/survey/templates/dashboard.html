@@ -1,0 +1,18 @@
+{% extends 'dashboard_base.html' %}
+
+{% block body %}
+<div id="dashboard" class="container">
+<div class="department-list">
+{% if department_list %}
+    <ul>
+    {% for department in department_list %}
+        <li><a class="department-link" href="{% url 'reports' pk=department.pk %}">{{ department.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p> No polls are available.</p>
+{% endif %}
+</div>
+</div>  
+
+{% endblock %}

@@ -2,183 +2,171 @@
 
 body{ font-family: 'Montserrat', sans-serif; background-color:white; margin:0; color:#4C99D4; }
 
-.alert{
-	background-color:white!important;
-	min-height: 100%;
-}
+/* Modal Thank You */
+.alert{	background-color:white!important; min-height: 100%; }
+.modal-content{	background-clip: none!important; border: none!important; }
+.modal-dialog{ max-width: none!important; top:30%; }
+.modal-body{ text-align: center!important; }
+.alert-para{ font-style: italic; font-size:2rem; margin:3% 0; }
+/*-----------------*/
 
-.modal-content{
-	background-clip: none!important;
-	border: none!important;
-}
-.modal-dialog{
-	max-width: none!important;
-	top:30%; 
-}
-
-.modal-body{
-	text-align: center!important;
-}
-
-.alert-para{
-	font-style: italic;
-	font-size:2rem;
-	margin:3% 0;
-}
-
-
+/* Body Layout */
 .grid-container{ display: grid; grid-template-columns: repeat(7, 1fr); }
 .grid-block-body{ margin:10px 5px; grid-column: 2/7; display: grid;	grid-template-columns: repeat(7, 1fr); }
 .grid-index{ grid-column: 2/7; }
 #intro{	color:#4C99D4; }
-
 .header-test-survey{grid-column: 1/8; grid-template-columns: repeat(7, 1fr); justify-self: center; text-align: center; }
+.header-test-survey h1{	font-size: 2rem; }
+.header-test-survey h2{	font-size: 1.5rem; }
+.survey-title{ grid-column: 2/7; text-align: center; }
+.col-form-label{ margin:4% 0; font-size:1.3rem;	font-weight: 700; }
+/*------------*/
 
-.header-test-survey h1{
-	font-size: 2rem;
+/* Forms Layout */
+.form-check{ display: inline-block; }
+.form-content{ grid-column: 1/7; }
+/*--------------*/
+
+
+/* Department */
+
+/*-------------*/
+/* Questions */
+#div_id_question_1 > label, #div_id_question_2 > label, #div_id_question_3 > label, #div_id_question_4 > label,
+#div_id_question_5 > label, #div_id_question_6 > label, #div_id_question_7 > label, #div_id_question_8 > label,
+#div_id_question_9 > label, #div_id_question_10 > label, #div_id_question_11 > label, #div_id_question_12 > label,
+#div_id_question_13 > label, #div_id_question_14 > label, #div_id_question_15 > label, #div_id_question_16 > label,
+#div_id_question_17 > label, #div_id_question_18 > label, #div_id_question_19 > label, #div_id_question_20 > label,
+#div_id_question_21 > label, #div_id_question_22 > label, #div_id_question_23 > label, #div_id_question_24 > label,
+#div_id_question_25 > label, #div_id_question_26 > label, #div_id_question_27 > label, #div_id_question_28 > label,
+#div_id_question_29 > label, #div_id_question_30 > label, #div_id_question_31 > label, #div_id_question_32 > label,
+#div_id_question_33 > label, #div_id_question_34 > label, #div_id_question_35 > label, #div_id_question_36 > label,
+#div_id_question_37 > label, #div_id_question_38 > label, #div_id_question_39 > label, #div_id_question_40 > label,
+#div_id_question_41 > label, #div_id_question_42 > label{ 
+	margin: 0.5rem 0 1.7rem 0;
+	font-weight: bold; 
+	font-size:1.3em; 
 }
 
-.header-test-survey h2{
-	font-size: 1.5rem;
+#div_id_question_1 input[type="radio"], #div_id_question_2 input[type="radio"], #div_id_question_4 input[type="radio"], #div_id_question_5 input[type="radio"],
+#div_id_question_7 input[type="radio"], #div_id_question_8 input[type="radio"], #div_id_question_10 input[type="radio"], #div_id_question_11 input[type="radio"],
+#div_id_question_13 input[type="radio"], #div_id_question_14 input[type="radio"], #div_id_question_16 input[type="radio"], #div_id_question_17 input[type="radio"],
+#div_id_question_19 input[type="radio"], #div_id_question_20 input[type="radio"], #div_id_question_22 input[type="radio"], #div_id_question_23 input[type="radio"],
+#div_id_question_25 input[type="radio"], #div_id_question_26 input[type="radio"], #div_id_question_28 input[type="radio"], #div_id_question_29 input[type="radio"],
+#div_id_question_31 input[type="radio"], #div_id_question_32 input[type="radio"], #div_id_question_34 input[type="radio"], #div_id_question_35 input[type="radio"],
+#div_id_question_36 input[type="radio"], #div_id_question_37 input[type="radio"], #div_id_question_40 input[type="radio"], #div_id_question_41 input[type="radio"]{
+	visibility: hidden;
+	position: absolute;
 }
+	
+#div_id_question_1 .form-check, #div_id_question_4 .form-check, #div_id_question_7 .form-check, #div_id_question_10 .form-check,
+#div_id_question_13 .form-check, #div_id_question_16 .form-check, #div_id_question_19 .form-check, #div_id_question_22 .form-check,
+#div_id_question_25 .form-check, #div_id_question_28 .form-check, #div_id_question_31 .form-check, #div_id_question_34 .form-check, 
+#div_id_question_36 .form-check, #div_id_question_40 .form-check
+{margin: 14% 0.4% 0% 2%; transition: .3s; }
 
-.survey-title{
-	/* justify-self: center; */
-	grid-column: 2/7;
-	text-align: center;
-}
+#div_id_question_2 .form-check, #div_id_question_5 .form-check, #div_id_question_8 .form-check, #div_id_question_11 .form-check,
+#div_id_question_14 .form-check, #div_id_question_17 .form-check, #div_id_question_20 .form-check, #div_id_question_23 .form-check,
+#div_id_question_26 .form-check, #div_id_question_29 .form-check, #div_id_question_32 .form-check, #div_id_question_35 .form-check,
+#div_id_question_37 .form-check, #div_id_question_41 .form-check
+{ margin:10px 0; font-size: 2.5rem; transition: .3s; width: 9%; }
 
-.col-form-label{
-	margin:4% 0;
-	font-size:1.3rem;
-	font-weight: 700;
-}
+/*---------------*/
 
-.form-check{
+/* Questions One */
+input[type="radio"]#id_question_1_1 + label::before, input[type="radio"]#id_question_4_1 + label::before, input[type="radio"]#id_question_7_1 + label::before, input[type="radio"]#id_question_10_1 + label::before,
+input[type="radio"]#id_question_13_1 + label::before, input[type="radio"]#id_question_16_1 + label::before, input[type="radio"]#id_question_19_1 + label::before, input[type="radio"]#id_question_22_1 + label::before,
+input[type="radio"]#id_question_25_1 + label::before, input[type="radio"]#id_question_28_1 + label::before, input[type="radio"]#id_question_31_1 + label::before, input[type="radio"]#id_question_34_1 + label::before,
+input[type="radio"]#id_question_36_1 + label::before, input[type="radio"]#id_question_40_1 + label::before
+{
+	content: "";
 	display: inline-block;
-}
-
-.form-content{
-	grid-column: 1/7;
-}
-
-#div_id_question_1 .form-check-label input[type="radio"]{
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-
-
-.form-check-label input[type="radio"]#id_id_question_1_0_1 {
-	/* position: relative; */
-	/* border: 1px solid gray; */
+	position: relative;
 	width: 1em;
 	height: 1em;
 	background:url('/static/admin/img/emoji/1f600.png') no-repeat;
 	/* Adjusts the position of the checkboxes on the text baseline */ 
 	vertical-align: -2px;
 	/* Set here so that Windows' High-Contrast Mode can override */
-	/* color: green; */
 	transform: scale(7) translate(64%, -70%);
 	background-size:100%;
-	/* transform: scale(10); */
 }
 
-.form-check-label input[type="radio"]#id_id_question_1_0_2 {
-	/* position: relative; */
-	/* border: 1px solid gray; */
+input[type="radio"]#id_question_1_2 + label::before, input[type="radio"]#id_question_4_2 + label::before, input[type="radio"]#id_question_7_2 + label::before, input[type="radio"]#id_question_10_2 + label::before,
+input[type="radio"]#id_question_13_2 + label::before, input[type="radio"]#id_question_16_2 + label::before, input[type="radio"]#id_question_19_2 + label::before, input[type="radio"]#id_question_22_2 + label::before,
+input[type="radio"]#id_question_25_2 + label::before, input[type="radio"]#id_question_28_2 + label::before, input[type="radio"]#id_question_31_2 + label::before, input[type="radio"]#id_question_34_2 + label::before,
+input[type="radio"]#id_question_36_2 + label::before, input[type="radio"]#id_question_40_2 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
 	width: 1em;
 	height: 1em;
 	background:url('/static/admin/img/emoji/1f642.png') no-repeat;
 	/* Adjusts the position of the checkboxes on the text baseline */ 
 	vertical-align: -2px;
 	/* Set here so that Windows' High-Contrast Mode can override */
-	/* color: green; */
 	transform: scale(7) translate(64%, -70%);
 	background-size:100%;
-	/* transform: scale(10); */
 }
 
-.form-check-label input[type="radio"]#id_id_question_1_0_3 {
-	/* position: relative; */
-	/* border: 1px solid gray; */
+input[type="radio"]#id_question_1_3 + label::before, input[type="radio"]#id_question_4_3 + label::before, input[type="radio"]#id_question_7_3 + label::before, input[type="radio"]#id_question_10_3 + label::before,
+input[type="radio"]#id_question_13_3 + label::before, input[type="radio"]#id_question_16_3 + label::before, input[type="radio"]#id_question_19_3 + label::before, input[type="radio"]#id_question_22_3 + label::before,
+input[type="radio"]#id_question_25_3 + label::before, input[type="radio"]#id_question_28_3 + label::before, input[type="radio"]#id_question_31_3 + label::before, input[type="radio"]#id_question_34_3 + label::before,
+input[type="radio"]#id_question_36_3 + label::before, input[type="radio"]#id_question_40_3 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
 	width: 1em;
 	height: 1em;
 	background:url('/static/admin/img/emoji/1f610.png') no-repeat;
 	/* Adjusts the position of the checkboxes on the text baseline */ 
 	vertical-align: -2px;
 	/* Set here so that Windows' High-Contrast Mode can override */
-	/* color: green; */
 	transform: scale(7) translate(38%, -70%);
 	background-size:100%;
-	/* transform: scale(10); */
 }
 
-.form-check-label input[type="radio"]#id_id_question_1_0_4 {
-	/* position: relative; */
-	/* border: 1px solid gray; */
+input[type="radio"]#id_question_1_4 + label::before, input[type="radio"]#id_question_4_4 + label::before, input[type="radio"]#id_question_7_4 + label::before, input[type="radio"]#id_question_10_4 + label::before,
+input[type="radio"]#id_question_13_4 + label::before, input[type="radio"]#id_question_16_4 + label::before, input[type="radio"]#id_question_19_4 + label::before, input[type="radio"]#id_question_22_4 + label::before,
+input[type="radio"]#id_question_25_4 + label::before, input[type="radio"]#id_question_28_4 + label::before, input[type="radio"]#id_question_31_4 + label::before, input[type="radio"]#id_question_34_4 + label::before,
+input[type="radio"]#id_question_36_4 + label::before, input[type="radio"]#id_question_40_4 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
 	width: 1em;
 	height: 1em;
 	background:url('/static/admin/img/emoji/1f61e.png') no-repeat;
 	/* Adjusts the position of the checkboxes on the text baseline */ 
 	vertical-align: -2px;
 	/* Set here so that Windows' High-Contrast Mode can override */
-	/* color: green; */
 	transform: scale(7) translate(64%, -70%);
 	background-size:100%;
-	/* transform: scale(10); */
 }
 
-.form-check-label input[type="radio"]#id_id_question_1_0_5 {
-	/* position: relative; */
-	/* border: 1px solid gray; */
+input[type="radio"]#id_question_1_5 + label::before, input[type="radio"]#id_question_4_5 + label::before, input[type="radio"]#id_question_7_5 + label::before, input[type="radio"]#id_question_10_5 + label::before,
+input[type="radio"]#id_question_13_5 + label::before, input[type="radio"]#id_question_16_5 + label::before, input[type="radio"]#id_question_19_5 + label::before, input[type="radio"]#id_question_22_5 + label::before,
+input[type="radio"]#id_question_25_5 + label::before, input[type="radio"]#id_question_28_5 + label::before, input[type="radio"]#id_question_31_5 + label::before, input[type="radio"]#id_question_34_5 + label::before,
+input[type="radio"]#id_question_36_5 + label::before, input[type="radio"]#id_question_40_5 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
 	width: 1em;
 	height: 1em;
 	background:url('/static/admin/img/emoji/1f625.png') no-repeat;
 	/* Adjusts the position of the checkboxes on the text baseline */ 
 	vertical-align: -2px;
 	/* Set here so that Windows' High-Contrast Mode can override */
-	/* color: green; */
 	transform: scale(7) translate(28%, -70%);
 	background-size:100%;
-	/* transform: scale(10); */
 }
 
+@keyframes bouncing{ 0% { top: 0%; } 100% { top: -100%; } }
 
-#div_id_question_1 .form-check-label input[type="radio"]::before {
-	/* content: url('/static/admin/img/emoji/1f625.png'); */
-	position: absolute;
-	font-size: .3em;
-	right: -20%;
-	top: -20%;
-	transform: scale(2) translate(20%, 20%);
-	visibility: hidden;
-}
-
-#div_id_question_1 .form-check-label input[type="radio"]:checked::before {
-/* Use `visibility` instead of `display` to avoid recalculating layout */
-	visibility: visible;
-}
-  
-/* #div_id_question_1 .form-check-label input[type="radio"]:disabled {
-border-color: black;
-background: #ddd;
-color: gray;
-} */
-
-@keyframes bouncing{
-	0%{
-		top:0;
-		
-	}
-	100%{
-		top:-100%;
-		
-	}
-}
-
-#div_id_question_1 input[type="radio"]:checked{
-	animation-name:bouncing;
+#div_id_question_1 input[type="radio"]:checked + label::before, #div_id_question_4 input[type="radio"]:checked + label::before, #div_id_question_7 input[type="radio"]:checked + label::before, #div_id_question_10 input[type="radio"]:checked + label::before,
+#div_id_question_13 input[type="radio"]:checked + label::before, #div_id_question_16 input[type="radio"]:checked + label::before, #div_id_question_19 input[type="radio"]:checked + label::before, #div_id_question_22 input[type="radio"]:checked + label::before,
+#div_id_question_25 input[type="radio"]:checked + label::before, #div_id_question_28 input[type="radio"]:checked + label::before, #div_id_question_31 input[type="radio"]:checked + label::before, #div_id_question_34 input[type="radio"]:checked + label::before,
+#div_id_question_36 input[type="radio"]:checked + label::before, #div_id_question_40 input[type="radio"]:checked + label::before{	
+	animation-name: bouncing;
 	animation-duration: .5s;
 	animation-timing-function: ease-in-out;
 	animation-delay: 0;
@@ -187,96 +175,54 @@ color: gray;
 	animation-play-state: running;
 }
 
-#div_id_question_1 input[type="radio"]:focus{
-	outline: none;
-}
+#div_id_question_1 input[type="radio"]:focus, #div_id_question_4 input[type="radio"]:focus, #div_id_question_7 input[type="radio"]:focus, #div_id_question_10 input[type="radio"]:focus,
+#div_id_question_13 input[type="radio"]:focus, #div_id_question_16 input[type="radio"]:focus, #div_id_question_19 input[type="radio"]:focus, #div_id_question_22 input[type="radio"]:focus,
+#div_id_question_25 input[type="radio"]:focus, #div_id_question_28 input[type="radio"]:focus, #div_id_question_31 input[type="radio"]:focus, #div_id_question_34 input[type="radio"]:focus,
+#div_id_question_36 input[type="radio"]:focus, #div_id_question_40 input[type="radio"]:focus
+{ outline: none; }
 
-#div_id_question_1 .form-check{
-	margin: 12% 4% 0% 2%;
-	transition: .3s;
-}
+#div_id_question_1 .form-check:hover, #div_id_question_4 .form-check:hover, #div_id_question_7 .form-check:hover, #div_id_question_10 .form-check:hover,
+#div_id_question_13 .form-check:hover, #div_id_question_16 .form-check:hover, #div_id_question_19 .form-check:hover, #div_id_question_22 .form-check:hover,
+#div_id_question_25 .form-check:hover, #div_id_question_28 .form-check:hover, #div_id_question_31 .form-check:hover, #div_id_question_34 .form-check:hover,
+#div_id_question_36 .form-check:hover, #div_id_question_40 .form-check:hover
+{ transform: translateY(33%); }
 
-#div_id_question_1 input[type="radio"]{
-	transform:translate(22px, -24px);
-	height: 40%;
-}
+#div_id_question_2 .form-check:hover, #div_id_question_5 .form-check:hover, #div_id_question_8 .form-check:hover, #div_id_question_11 .form-check:hover,
+#div_id_question_14 .form-check:hover, #div_id_question_17 .form-check:hover, #div_id_question_20 .form-check:hover, #div_id_question_23 .form-check:hover,
+#div_id_question_26 .form-check:hover, #div_id_question_29 .form-check:hover, #div_id_question_32 .form-check:hover, #div_id_question_35 .form-check:hover,
+#div_id_question_37 .form-check:hover, #div_id_question_41 .form-check:hover
+{ color:orange;	transform: translateY(-20px); }
 
-#div_id_question_1 .form-check:hover{
-	transform: translateY(33%);
-}
-
-#div_id_question_4 .form-check{
-	font-size:1.4rem;
-	margin:0 3%;
-}
-
-#div_id_question_3 .form-check{
-	font-size:1.4rem;
-	margin:0 3%;
-}
-
-#div_id_question_2 .form-check{
-	margin:10px 0;
-	font-size: 2.5rem;
-	transition: .3s;
-	width: 9%;
-}
-
-#div_id_question_2 .form-check:hover{
-	color:orange;
-	transform: translateY(-20px);
-}
-
-#div_id_question_2 .form-check-label input[type="radio"]{
-	appearance: none;
-	-moz-appearance: none;
-}
-
-#div_id_question_2 input[type="radio"]::before {
+#div_id_question_2 input[type="radio"]:checked + label::before, #div_id_question_5 input[type="radio"]:checked + label::before, #div_id_question_8 input[type="radio"]:checked + label::before, #div_id_question_11 input[type="radio"]:checked + label::before,
+#div_id_question_14 input[type="radio"]:checked + label::before, #div_id_question_17 input[type="radio"]:checked + label::before, #div_id_question_20 input[type="radio"]:checked + label::before, #div_id_question_23 input[type="radio"]:checked + label::before,
+#div_id_question_26 input[type="radio"]:checked + label::before, #div_id_question_29 input[type="radio"]:checked + label::before, #div_id_question_32 input[type="radio"]:checked + label::before, #div_id_question_35 input[type="radio"]:checked + label::before,
+#div_id_question_37 input[type="radio"]:checked + label::before, #div_id_question_41 input[type="radio"]:checked + label::before {
 	content: '✓';
 	position: absolute;
 	font-size: .5em;
-	right: -20%;
-	top: -20%;
+	right: 100%;
+	top: 10%;
 	color:orange;
 	transform: scale(2) translate(245%, -20%);
-	visibility: hidden;
 }
 
-#div_id_question_2 .form-check-label input[type="radio"]:checked::before {
-/* Use `visibility` instead of `display` to avoid recalculating layout */
-	visibility: visible;
-}
+#div_id_question_3 .form-check, #div_id_question_6 .form-check, #div_id_question_9 .form-check, #div_id_question_12 .form-check,
+#div_id_question_15 .form-check, #div_id_question_18 .form-check, #div_id_question_21 .form-check, #div_id_question_24 .form-check,
+#div_id_question_27 .form-check, #div_id_question_30 .form-check, #div_id_question_33 .form-check, #div_id_question_38 .form-check,
+#div_id_question_42 .form-check
+{	font-size:1.4rem; margin:0 3%; }
 
-input[type="radio"]#div_id_question_2:hover{
-	transform: translateX(3%);
-	color:green;
-}
+#div_id_question_3 .form-check-input, #div_id_question_6 .form-check-input, #div_id_question_9 .form-check-input, #div_id_question_12 .form-check-input,
+#div_id_question_15 .form-check-input, #div_id_question_18 .form-check-input, #div_id_question_21 .form-check-input, #div_id_question_24 .form-check-input,
+#div_id_question_27 .form-check-input, #div_id_question_30 .form-check-input, #div_id_question_33 .form-check-input, #div_id_question_38 .form-check-input,
+#div_id_question_42 .form-check-input
+{ transform: scale(1.4) translate(-20%, 20%); }
+/*--------------------------*/
 
-#div_id_question_3 .form-check-input{
-	transform: scale(1.4) translate(-20%, 20%);
-}
-
-#div_id_question_4 .form-check-input{
-	transform: scale(1.4) translate(-20%, 20%);
-}
-
-
-.department-list a{
-	color:#4C99D4;
-	
-}
-
-.department-list li:hover{
-	transform: scale(1.1);	
-
-}
-
-.department-list a:hover{
-	text-decoration: none;
-}
-
-
+/* Department List */
+.department-list a{	color:#4C99D4; }
+.department-list li:hover{ transform: scale(1.1); }
+.department-list a:hover{ text-decoration: none; }
 .btn-custom{
 	position: relative;
 	right: -45%;
@@ -289,11 +235,7 @@ input[type="radio"]#div_id_question_2:hover{
 	transition: .3s;
 }
 
-.btn-custom:hover{
-	color:#4C99D4;
-	background-color:white;
-	box-shadow: -1px 6px 12px -6px rgba(0,0,0,0.75);
-}
+.btn-custom:hover{ color:#4C99D4; background-color:white;	box-shadow: -1px 6px 12px -6px rgba(0,0,0,0.75); }
 
 .department-list li{
 	list-style: none;
@@ -306,780 +248,585 @@ input[type="radio"]#div_id_question_2:hover{
 	text-align: center;
 	font-size:1.5em;
 	transition:0.3s;
-	
+	width:50%;
+	left:20%;
+	position: relative;
 }
 
-.asteriskField{
-	visibility: hidden;
-}
+.asteriskField{	visibility: hidden; }
 
 /* Inpatient Survey */
-
-.table tr:first-child th,
-.table tr:first-child td{
-	border-top: none;
-}
-
-.inpatient-form{
-	min-width: 117%;
-	margin-top:12%;
-}
-
-
-.inpatient-form th{
-	width: 20%;
-}
-
-.inpatient-header{
-	height: 13%!important;
-}
-
-.inpatient-header th{
-	text-align: justify;
-	padding-top:7%;
-}
-
-.inpatient-form ul{
-	list-style: none!important;
-}
-.inpatient-form img{
-	transform: scale(0.5, 0.5);
-}
-
-.inpatient-dynamic ul{
-	display: inline-block;
-	white-space: nowrap;	
-}
-
-.inpatient-form th{
-	width: 35%;
-	height: 15%;
-}
-
-.list-emoji li{
-	display: inline-block;
-	text-align: center;
-	width: 18%;
-}
-
-.rotate-text{
-	/* transform: rotate(-50deg) translateX(-27%)!important;
-	transform-origin: left bottom;
-	position: absolute; */
-	text-align: center;
-}
-
-.inpatient-data li{
-	display:inline-block;
-}
-
-.inpatient-data ul{
-	margin-top:2.1%;
-}
-
-.inpatient-data ul:not(#id_question_13):not(#id_question_14){
-	font-size: 0;
-}
-
-
-.inpatient-data li{
-	margin:0 8.3%;
-	transform:scale(1.5)
-}
-
-.inpatient-data #id_question_13{
+.inpatient-data{
 	margin-top:5%;
 }
 
-#id_question_13 li{
-	transform: scale(1.3)!important;
-	margin:0 2%;
+label[for="id_question_43_0"], label[for="id_question_44_0"], label[for="id_question_45_0"],
+label[for="id_question_46_0"], label[for="id_question_47_0"], label[for="id_question_48_0"],
+label[for="id_question_49_0"], label[for="id_question_50_0"], label[for="id_question_51_0"],
+label[for="id_question_52_0"], label[for="id_question_53_0"]{
+	font-size:1.5em;
+	font-weight:bold;
 }
 
-#id_question_14{
-	margin-top: -5%;
+.inpatient-data .form-check{
+	margin-top:20%;
+	margin-left:2%;
 }
 
-#id_question_14 li{
-	transform: scale(1.3)!important;
-	margin:6% 6%;
+#prevBtn{
+	border-radius: 30px;
+	border:1px solid #4C99D4;
+	width: 130%;	
+	background-color:#4C99D4;
+	color:white;
+	font-size: 100%;
+	transition: .3s;
+	margin-left:-110%;
 }
+
+#prevBtn:hover{
+	color:#4C99D4;
+	background-color: white;
+}
+
+#div_id_question_43 input[type="radio"], #div_id_question_44 input[type="radio"], #div_id_question_45 input[type="radio"], #div_id_question_46 input[type="radio"],
+#div_id_question_47 input[type="radio"], #div_id_question_48 input[type="radio"], #div_id_question_49 input[type="radio"], #div_id_question_50 input[type="radio"],
+#div_id_question_51 input[type="radio"]{
+	visibility: hidden;
+	position: absolute;
+}
+
+input[type="radio"]#id_question_43_1 + label::before, input[type="radio"]#id_question_44_1 + label::before,
+input[type="radio"]#id_question_45_1 + label::before, input[type="radio"]#id_question_46_1 + label::before,
+input[type="radio"]#id_question_47_1 + label::before, input[type="radio"]#id_question_48_1 + label::before,
+input[type="radio"]#id_question_49_1 + label::before, input[type="radio"]#id_question_50_1 + label::before,
+input[type="radio"]#id_question_51_1 + label::before{
+	content:"";
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background:url('/static/admin/img/emoji/1f600.png') no-repeat;
+	/* Adjusts the position of the checkboxes on the text baseline */ 
+	vertical-align: -2px;
+	/* Set here so that Windows' High-Contrast Mode can override */
+	transform: scale(7) translate(64%, -70%);
+	background-size:100%;
+}
+
+input[type="radio"]#id_question_43_2 + label::before, input[type="radio"]#id_question_44_2 + label::before,
+input[type="radio"]#id_question_45_2 + label::before, input[type="radio"]#id_question_46_2 + label::before,
+input[type="radio"]#id_question_47_2 + label::before, input[type="radio"]#id_question_48_2 + label::before,
+input[type="radio"]#id_question_49_2 + label::before, input[type="radio"]#id_question_50_2 + label::before,
+input[type="radio"]#id_question_51_2 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background:url('/static/admin/img/emoji/1f642.png') no-repeat;
+	/* Adjusts the position of the checkboxes on the text baseline */ 
+	vertical-align: -2px;
+	/* Set here so that Windows' High-Contrast Mode can override */
+	transform: scale(7) translate(64%, -70%);
+	background-size:100%;
+}
+
+input[type="radio"]#id_question_43_3 + label::before, input[type="radio"]#id_question_44_3 + label::before,
+input[type="radio"]#id_question_45_3 + label::before, input[type="radio"]#id_question_46_3 + label::before,
+input[type="radio"]#id_question_47_3 + label::before, input[type="radio"]#id_question_48_3 + label::before,
+input[type="radio"]#id_question_49_3 + label::before, input[type="radio"]#id_question_50_3 + label::before,
+input[type="radio"]#id_question_51_3 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background:url('/static/admin/img/emoji/1f610.png') no-repeat;
+	/* Adjusts the position of the checkboxes on the text baseline */ 
+	vertical-align: -2px;
+	/* Set here so that Windows' High-Contrast Mode can override */
+	transform: scale(7) translate(38%, -70%);
+	background-size:100%;
+}
+
+input[type="radio"]#id_question_43_4 + label::before, input[type="radio"]#id_question_44_4 + label::before,
+input[type="radio"]#id_question_45_4 + label::before, input[type="radio"]#id_question_46_4 + label::before,
+input[type="radio"]#id_question_47_4 + label::before, input[type="radio"]#id_question_48_4 + label::before,
+input[type="radio"]#id_question_49_4 + label::before, input[type="radio"]#id_question_50_4 + label::before,
+input[type="radio"]#id_question_51_4 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background:url('/static/admin/img/emoji/1f61e.png') no-repeat;
+	/* Adjusts the position of the checkboxes on the text baseline */ 
+	vertical-align: -2px;
+	/* Set here so that Windows' High-Contrast Mode can override */
+	transform: scale(7) translate(64%, -70%);
+	background-size:100%;
+}
+
+input[type="radio"]#id_question_43_5 + label::before, input[type="radio"]#id_question_44_5 + label::before,
+input[type="radio"]#id_question_45_5 + label::before, input[type="radio"]#id_question_46_5 + label::before,
+input[type="radio"]#id_question_47_5 + label::before, input[type="radio"]#id_question_48_5 + label::before,
+input[type="radio"]#id_question_49_5 + label::before, input[type="radio"]#id_question_50_5 + label::before,
+input[type="radio"]#id_question_51_5 + label::before{
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background:url('/static/admin/img/emoji/1f625.png') no-repeat;
+	/* Adjusts the position of the checkboxes on the text baseline */ 
+	vertical-align: -2px;
+	/* Set here so that Windows' High-Contrast Mode can override */
+	transform: scale(7) translate(28%, -70%);
+	background-size:100%;
+}
+
+.inpatient-tab {
+	display: none;
+}
+
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+.step.active {
+	opacity: 1;
+}
+
+/* .inpatient-form{ min-width: 117%; margin-top:12%; }
+.inpatient-form th{	width: 20%; }
+.inpatient-header{ height: 13%!important; }
+.inpatient-header th{ text-align: justify; padding-top:7%; }
+.inpatient-form ul{	list-style: none!important; }
+.inpatient-form img{ transform: scale(0.5, 0.5); }
+.inpatient-dynamic ul{ display: inline-block; white-space: nowrap; }
+.inpatient-form th{	width: 35%;	height: 15%; }
+.list-emoji li{	display: inline-block;	text-align: center;	width: 18%; }
+
+.inpatient-data li{	display:inline-block; }
+.inpatient-data ul{	margin-top:2.1%; }
+.inpatient-data ul:not(#id_question_13):not(#id_question_14){ font-size: 0; }
+.inpatient-data li{	margin:0 8.3%; transform:scale(1.5) }
+.inpatient-data #id_question_13{ margin-top:5%; }
+#id_question_13 li{	transform: scale(1.3)!important; margin:0 2%; }
+#id_question_14{ margin-top: -5%; }
+#id_question_14 li{	transform: scale(1.3)!important; margin:6% 6%; } */
+
 /* All media queries start here */
 
-/* Device = Desktops
-   Screen = 1281px to higher resolutions desktops
-*/
+/* Desktop = High End Laptop, Desktops || Screen 1300px and Up */
 
-@media (min-width: 1281px){
-	
-	.form-content{ grid-column: 1/8; }
-	.header-test-survey h1{	font-size: 2rem; }	
-	.header-test-survey h2{ font-size: 1.5rem; }
-	.form-check-label input[type="radio"]#id_id_question_1_0_1 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f600.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(7) translate(64%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_2 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f642.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(7) translate(64%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_3 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f610.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(7) translate(38%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_4 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f61e.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(7) translate(64%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_5 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f625.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(7) translate(28%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	
-	#div_id_question_1 .form-check{
-		margin: 12% 4% 0% 2%;
-		transition: .3s;
-	}
+@media(min-width: 1300px){ 
+#div_id_question_1 .form-check, #div_id_question_4 .form-check, #div_id_question_7 .form-check, #div_id_question_10 .form-check,
+#div_id_question_13 .form-check, #div_id_question_16 .form-check, #div_id_question_19 .form-check, #div_id_question_22 .form-check,
+#div_id_question_25 .form-check, #div_id_question_28 .form-check, #div_id_question_31 .form-check, #div_id_question_34 .form-check, 
+#div_id_question_36 .form-check, #div_id_question_40 .form-check
+{margin: 14% 3.5% 0% 2%; transition: .3s; }
 
-	#div_id_question_1 .col-form-label{
-		margin-bottom:4%;
-	}
-	
-	.col-form-label{
-		font-size:1.3rem;
-		margin:4% 0;
-		font-weight: 700;
-	}
+#div_id_question_2 .form-check, #div_id_question_5 .form-check, #div_id_question_8 .form-check, #div_id_question_11 .form-check,
+#div_id_question_14 .form-check, #div_id_question_17 .form-check, #div_id_question_20 .form-check, #div_id_question_23 .form-check,
+#div_id_question_26 .form-check, #div_id_question_29 .form-check, #div_id_question_32 .form-check, #div_id_question_35 .form-check,
+#div_id_question_37 .form-check, #div_id_question_41 .form-check
+{ margin:10px 5px 10px 0; font-size: 2.5rem; transition: .3s; width: 9%; }
 
-	#div_id_question_2 .form-check{
-		font-size:2.5rem;
-	}
-
-	.btn-custom{
-		font-size:150%;
-	}
-	
 }
 
-/* Desktop = Laptop, Desktops
-   Screen = 1025px to 1280px
-*/
 
-@media (min-width: 1025px) and (max-width: 1280px){
+/*-----------------------------*/
+
+/* Desktop = Laptop, Desktops || Screen = 1025px to 1280px */
+@media(min-width: 1025px) and (max-width: 1280px){
+
 	.form-content{ grid-column: 1/8; }
 	.header-test-survey h1{	font-size: 1.7rem; }	
 	.header-test-survey h2{ font-size: 1.3rem; }
-	.form-check-label input[type="radio"]#id_id_question_1_0_1 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_1 + label::before, input[type="radio"]#id_question_4_1 + label::before, input[type="radio"]#id_question_7_1 + label::before, input[type="radio"]#id_question_10_1 + label::before,
+	input[type="radio"]#id_question_13_1 + label::before, input[type="radio"]#id_question_16_1 + label::before, input[type="radio"]#id_question_19_1 + label::before, input[type="radio"]#id_question_22_1 + label::before,
+	input[type="radio"]#id_question_25_1 + label::before, input[type="radio"]#id_question_28_1 + label::before, input[type="radio"]#id_question_31_1 + label::before, input[type="radio"]#id_question_34_1 + label::before,
+	input[type="radio"]#id_question_36_1 + label::before, input[type="radio"]#id_question_40_1 + label::before
+	{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f600.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(90%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_2 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_2 + label::before, input[type="radio"]#id_question_4_2 + label::before, input[type="radio"]#id_question_7_2 + label::before, input[type="radio"]#id_question_10_2 + label::before,
+	input[type="radio"]#id_question_13_2 + label::before, input[type="radio"]#id_question_16_2 + label::before, input[type="radio"]#id_question_19_2 + label::before, input[type="radio"]#id_question_22_2 + label::before,
+	input[type="radio"]#id_question_25_2 + label::before, input[type="radio"]#id_question_28_2 + label::before, input[type="radio"]#id_question_31_2 + label::before, input[type="radio"]#id_question_34_2 + label::before,
+	input[type="radio"]#id_question_36_2 + label::before, input[type="radio"]#id_question_40_2 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f642.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(90%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_3 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_3 + label::before, input[type="radio"]#id_question_4_3 + label::before, input[type="radio"]#id_question_7_3 + label::before, input[type="radio"]#id_question_10_3 + label::before,
+	input[type="radio"]#id_question_13_3 + label::before, input[type="radio"]#id_question_16_3 + label::before, input[type="radio"]#id_question_19_3 + label::before, input[type="radio"]#id_question_22_3 + label::before,
+	input[type="radio"]#id_question_25_3 + label::before, input[type="radio"]#id_question_28_3 + label::before, input[type="radio"]#id_question_31_3 + label::before, input[type="radio"]#id_question_34_3 + label::before,
+	input[type="radio"]#id_question_36_3 + label::before, input[type="radio"]#id_question_40_3 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f610.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(57%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_4 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_4 + label::before, input[type="radio"]#id_question_4_4 + label::before, input[type="radio"]#id_question_7_4 + label::before, input[type="radio"]#id_question_10_4 + label::before,
+	input[type="radio"]#id_question_13_4 + label::before, input[type="radio"]#id_question_16_4 + label::before, input[type="radio"]#id_question_19_4 + label::before, input[type="radio"]#id_question_22_4 + label::before,
+	input[type="radio"]#id_question_25_4 + label::before, input[type="radio"]#id_question_28_4 + label::before, input[type="radio"]#id_question_31_4 + label::before, input[type="radio"]#id_question_34_4 + label::before,
+	input[type="radio"]#id_question_36_4 + label::before, input[type="radio"]#id_question_40_4 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f61e.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(90%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_5 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_5 + label::before, input[type="radio"]#id_question_4_5 + label::before, input[type="radio"]#id_question_7_5 + label::before, input[type="radio"]#id_question_10_5 + label::before,
+	input[type="radio"]#id_question_13_5 + label::before, input[type="radio"]#id_question_16_5 + label::before, input[type="radio"]#id_question_19_5 + label::before, input[type="radio"]#id_question_22_5 + label::before,
+	input[type="radio"]#id_question_25_5 + label::before, input[type="radio"]#id_question_28_5 + label::before, input[type="radio"]#id_question_31_5 + label::before, input[type="radio"]#id_question_34_5 + label::before,
+	input[type="radio"]#id_question_36_5 + label::before, input[type="radio"]#id_question_40_5 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f625.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(38%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
 	
-	#div_id_question_1 .form-check{
-		margin: 10% 1% 0% 2%;
-		transition: .3s;
+	#div_id_question_1 .form-check, #div_id_question_4 .form-check, #div_id_question_7 .form-check, #div_id_question_10 .form-check,
+	#div_id_question_13 .form-check, #div_id_question_16 .form-check, #div_id_question_19 .form-check, #div_id_question_22 .form-check,
+	#div_id_question_25 .form-check, #div_id_question_28 .form-check, #div_id_question_31 .form-check, #div_id_question_34 .form-check, 
+	#div_id_question_36 .form-check, #div_id_question_40 .form-check
+	{ margin: 10% -2% 0% 2%; transition: .3s; }
+
+	#div_id_question_2 .form-check, #div_id_question_5 .form-check, #div_id_question_8 .form-check, #div_id_question_11 .form-check,
+	#div_id_question_14 .form-check, #div_id_question_17 .form-check, #div_id_question_20 .form-check, #div_id_question_23 .form-check,
+	#div_id_question_26 .form-check, #div_id_question_29 .form-check, #div_id_question_32 .form-check, #div_id_question_35 .form-check,
+	#div_id_question_37 .form-check, #div_id_question_41 .form-check
+	{ font-size:2.3rem; }
+
+	.btn-custom{ font-size:120%; }
+
+	.table tr:first-child th,
+	.table tr:first-child td{
+		border-top: none;
 	}
 
-	#div_id_question_1 .col-form-label{
-		margin-bottom:4%;
-	}
-	
-	.col-form-label{
-		font-size:1.1rem;
-		margin:4% 0;
-		font-weight: 700;
-	}
+	.inpatient-form{ display: grid;	grid-template-columns: repeat(7, 1fr); }
+	.inpatient-form{ min-width: 117%; margin-top: 5%; }
+	.inpatient-form tbody{ display: grid; grid-template-columns: repeat(7, 1fr); grid-column: 1/8; }
+	.inpatient-form tr{	display: grid; grid-template-columns: repeat(7, 1fr); grid-column: 1/8; }
+	.inpatient-form th{	grid-column: 1/4; }
+	.inpatient-header{ height: 13%!important; }
+	.inpatient-header th{ padding-top:7%; }
+	.inpatient-form ul{	list-style: none!important; }
+	.inpatient-form img{ transform: scale(0.5, 0.5); }
+	.inpatient-dynamic ul{ display: inline-block; white-space: nowrap; }
+	.list-emoji li{	display: inline-block; text-align: center;width: 18%; }
+	.inpatient-data li{	display:inline-block; }
+	.inpatient-data ul{	margin-top:2.1%; }
 
-	#div_id_question_2 .form-check{
-		font-size:2.3rem;
-	}
+	.inpatient-data ul:not(#id_question_13):not(#id_question_14){ font-size: 0; }
+	.inpatient-data li{	margin:0 8.3%; transform:scale(1.5) }
+	.inpatient-data #id_question_13{ margin-top:5%; }
+	#id_question_13 li{	transform: scale(1.3)!important; margin:0 2%; }
 
-	.btn-custom{
-		font-size:120%;
-	}
-
-	/* Inpatient Survey */
-
-.table tr:first-child th,
-.table tr:first-child td{
-	border-top: none;
+	#id_question_14{ margin-top: -5%; }
+	#id_question_14 li{	transform: scale(1.3)!important; margin:6% 6%; }
 }
-
-.inpatient-form{
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-}
-
-.inpatient-form{
-	min-width: 117%;
-	margin-top: 5%;
-}
-
-.inpatient-form tbody{
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	grid-column: 1/8;
-}
-
-.inpatient-form tr{
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	grid-column: 1/8;
-}
-
-.inpatient-form th{
-	grid-column: 1/4;
-}
-
-.inpatient-header{
-	height: 13%!important;
-}
-
-.inpatient-header th{
-	padding-top:7%;
-}
-
-.inpatient-form ul{
-	list-style: none!important;
-}
-.inpatient-form img{
-	transform: scale(0.5, 0.5);
-}
-
-.inpatient-dynamic ul{
-	display: inline-block;
-	white-space: nowrap;	
-}
-
-
-.list-emoji li{
-	display: inline-block;
-	text-align: center;
-	width: 18%;
-}
-
-.rotate-text{
-	/* transform: rotate(-50deg) translateX(-27%)!important;
-	transform-origin: left bottom;
-	position: absolute; */
-	text-align: center;
-}
-
-.inpatient-data li{
-	display:inline-block;
-}
-
-.inpatient-data ul{
-	margin-top:2.1%;
-}
-
-.inpatient-data ul:not(#id_question_13):not(#id_question_14){
-	font-size: 0;
-}
-
-
-.inpatient-data li{
-	margin:0 8.3%;
-	transform:scale(1.5)
-}
-
-.inpatient-data #id_question_13{
-	margin-top:5%;
-}
-
-#id_question_13 li{
-	transform: scale(1.3)!important;
-	margin:0 2%;
-}
-
-#id_question_14{
-	margin-top: -5%;
-}
-
-#id_question_14 li{
-	transform: scale(1.3)!important;
-	margin:6% 6%;
-}
-
-
-}
-
+/*----------------------------------------*/
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-
 /* Portrait and Landscape */
-
+/* Devices = Tablets || Screen 768px to 1024px */
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-	.form-content{ grid-column: 1/8; }
-	.header-test-survey h1{	font-size: 1.5rem; }	
-	.header-test-survey h2{ font-size: 1rem; }
-	.form-check-label input[type="radio"]#id_id_question_1_0_1 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f600.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(5) translate(95%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_2 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f642.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(5) translate(95%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_3 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f610.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(5) translate(57%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_4 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f61e.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(5) translate(90%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_5 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
-		width: 1em;
-		height: 1em;
-		background:url('/static/admin/img/emoji/1f625.png') no-repeat;
-		/* Adjusts the position of the checkboxes on the text baseline */ 
-		vertical-align: -2px;
-		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
-		transform: scale(5) translate(40%, -70%);
-		background-size:100%;
-		/* transform: scale(10); */	
-	}
-	
-	#div_id_question_1 .form-check{
-		margin: 8% 2% 0% 2%;
-		transition: .3s;
-		font-size:0.9rem;
-	}
-
-	#div_id_question_1 .col-form-label{
-		margin-bottom:4%;
-	}
-	
-	.col-form-label{
-		font-size:1rem;
-		margin:2% 0;
-	}
-
-	#div_id_question_2 .form-check{
-		font-size:2.0rem;
-	}
-
-	.btn-custom{
-		font-size:110%;
-	}
-	
-}
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
 	.form-content{ grid-column: 1/8; }
 	.header-test-survey h1{	font-size: 1.3rem; }	
 	.header-test-survey h2{ font-size: 1rem; }
-	.form-check-label input[type="radio"]#id_id_question_1_0_1 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_1 + label::before, input[type="radio"]#id_question_4_1 + label::before, input[type="radio"]#id_question_7_1 + label::before, input[type="radio"]#id_question_10_1 + label::before,
+	input[type="radio"]#id_question_13_1 + label::before, input[type="radio"]#id_question_16_1 + label::before, input[type="radio"]#id_question_19_1 + label::before, input[type="radio"]#id_question_22_1 + label::before,
+	input[type="radio"]#id_question_25_1 + label::before, input[type="radio"]#id_question_28_1 + label::before, input[type="radio"]#id_question_31_1 + label::before, input[type="radio"]#id_question_34_1 + label::before,
+	input[type="radio"]#id_question_36_1 + label::before, input[type="radio"]#id_question_40_1 + label::before
+	{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f600.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(95%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_2 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_2 + label::before, input[type="radio"]#id_question_4_2 + label::before, input[type="radio"]#id_question_7_2 + label::before, input[type="radio"]#id_question_10_2 + label::before,
+	input[type="radio"]#id_question_13_2 + label::before, input[type="radio"]#id_question_16_2 + label::before, input[type="radio"]#id_question_19_2 + label::before, input[type="radio"]#id_question_22_2 + label::before,
+	input[type="radio"]#id_question_25_2 + label::before, input[type="radio"]#id_question_28_2 + label::before, input[type="radio"]#id_question_31_2 + label::before, input[type="radio"]#id_question_34_2 + label::before,
+	input[type="radio"]#id_question_36_2 + label::before, input[type="radio"]#id_question_40_2 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f642.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(95%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_3 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_3 + label::before, input[type="radio"]#id_question_4_3 + label::before, input[type="radio"]#id_question_7_3 + label::before, input[type="radio"]#id_question_10_3 + label::before,
+	input[type="radio"]#id_question_13_3 + label::before, input[type="radio"]#id_question_16_3 + label::before, input[type="radio"]#id_question_19_3 + label::before, input[type="radio"]#id_question_22_3 + label::before,
+	input[type="radio"]#id_question_25_3 + label::before, input[type="radio"]#id_question_28_3 + label::before, input[type="radio"]#id_question_31_3 + label::before, input[type="radio"]#id_question_34_3 + label::before,
+	input[type="radio"]#id_question_36_3 + label::before, input[type="radio"]#id_question_40_3 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f610.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(57%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_4 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_4 + label::before, input[type="radio"]#id_question_4_4 + label::before, input[type="radio"]#id_question_7_4 + label::before, input[type="radio"]#id_question_10_4 + label::before,
+	input[type="radio"]#id_question_13_4 + label::before, input[type="radio"]#id_question_16_4 + label::before, input[type="radio"]#id_question_19_4 + label::before, input[type="radio"]#id_question_22_4 + label::before,
+	input[type="radio"]#id_question_25_4 + label::before, input[type="radio"]#id_question_28_4 + label::before, input[type="radio"]#id_question_31_4 + label::before, input[type="radio"]#id_question_34_4 + label::before,
+	input[type="radio"]#id_question_36_4 + label::before, input[type="radio"]#id_question_40_4 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f61e.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(90%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_5 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_5 + label::before, input[type="radio"]#id_question_4_5 + label::before, input[type="radio"]#id_question_7_5 + label::before, input[type="radio"]#id_question_10_5 + label::before,
+	input[type="radio"]#id_question_13_5 + label::before, input[type="radio"]#id_question_16_5 + label::before, input[type="radio"]#id_question_19_5 + label::before, input[type="radio"]#id_question_22_5 + label::before,
+	input[type="radio"]#id_question_25_5 + label::before, input[type="radio"]#id_question_28_5 + label::before, input[type="radio"]#id_question_31_5 + label::before, input[type="radio"]#id_question_34_5 + label::before,
+	input[type="radio"]#id_question_36_5 + label::before, input[type="radio"]#id_question_40_5 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f625.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(5) translate(40%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
 	
-	#div_id_question_1 .form-check{
-		margin: 8% 0% 0% 2%;
-		transition: .3s;
-		font-size:0.7rem;
-	}
+	#div_id_question_1 .form-check, #div_id_question_4 .form-check, #div_id_question_7 .form-check, #div_id_question_10 .form-check,
+	#div_id_question_13 .form-check, #div_id_question_16 .form-check, #div_id_question_19 .form-check, #div_id_question_22 .form-check, 
+	#div_id_question_25 .form-check, #div_id_question_28 .form-check, #div_id_question_31 .form-check, #div_id_question_34 .form-check, 
+	#div_id_question_36 .form-check, #div_id_question_40 .form-check
+	{ margin: 8% 0% 0% 0%; transition: .3s; font-size:0.7rem; }
 
-	#div_id_question_1 .col-form-label{
-		margin-bottom:4%;
-	}
-	
-	.col-form-label{
-		font-size:1rem;
-		margin:2% 0;
-	}
+	#div_id_question_2 .form-check, #div_id_question_5 .form-check, #div_id_question_8 .form-check, #div_id_question_11 .form-check,
+	#div_id_question_14 .form-check, #div_id_question_17 .form-check, #div_id_question_20 .form-check, #div_id_question_23 .form-check,
+	#div_id_question_26 .form-check, #div_id_question_29 .form-check, #div_id_question_32 .form-check, #div_id_question_35 .form-check,
+	#div_id_question_37 .form-check, #div_id_question_41 .form-check
+	{ font-size:2.0rem; }	
 
-	#div_id_question_2 .form-check{
-		font-size:2.0rem;	
-	}
-	
-	.btn-custom{
-		font-size: 100%;
-	}
+	.btn-custom{ font-size: 100%; }
 
-	.modal-dialog{
-		top:7%; 
-	}
-	
-	.modal-body h1{
-		font-size: 2rem;
-	}
-
-	.modal-body .alert-para{
-		font-size: 1.4rem;
-	}
-
-	.modal-body img{
-		transform: scale(0.8);
-		margin-top: -2%;
-	}
-
+	.modal-dialog{ top:7%; }	
+	.modal-body h1{	font-size: 2rem; }
+	.modal-body .alert-para{ font-size: 1.4rem;	}
+	.modal-body img{ transform: scale(0.8);	margin-top: -2%; }
 }
+/*-----------------------------------*/
 
-/* Device = Low Resolution Tablets, Mobile (Landscape)
-   Screen = 481px to 767px
-*/
-
+/* Device = Low Resolution Tablets, Mobile (Landscape) || Screen = 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px){
 
+	#div_id_question_1 > label, #div_id_question_2 > label, #div_id_question_3 > label, #div_id_question_4 > label,
+	#div_id_question_5 > label, #div_id_question_6 > label, #div_id_question_7 > label, #div_id_question_8 > label,
+	#div_id_question_9 > label, #div_id_question_10 > label, #div_id_question_11 > label, #div_id_question_12 > label,
+	#div_id_question_13 > label, #div_id_question_14 > label, #div_id_question_15 > label, #div_id_question_16 > label,
+	#div_id_question_17 > label, #div_id_question_18 > label, #div_id_question_19 > label, #div_id_question_20 > label,
+	#div_id_question_21 > label, #div_id_question_22 > label, #div_id_question_23 > label, #div_id_question_24 > label,
+	#div_id_question_25 > label, #div_id_question_26 > label, #div_id_question_27 > label, #div_id_question_28 > label,
+	#div_id_question_29 > label, #div_id_question_30 > label, #div_id_question_31 > label, #div_id_question_32 > label,
+	#div_id_question_33 > label, #div_id_question_34 > label, #div_id_question_35 > label, #div_id_question_36 > label,
+	#div_id_question_37 > label, #div_id_question_38 > label, #div_id_question_39 > label, #div_id_question_40 > label,
+	#div_id_question_41 > label, #div_id_question_2 > label{ 
+	margin: 0.5rem 0 0 0;
+	font-weight: bold; 
+	font-size:1em; 
+	}
+
 	.form-content{ grid-column: 1/8; }
 	.header-test-survey h1{	font-size: 1.3rem; }	
 	.header-test-survey h2{ font-size: 1rem; }
-	.form-check-label input[type="radio"]#id_id_question_1_0_1 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_1 + label::before, input[type="radio"]#id_question_4_1 + label::before, input[type="radio"]#id_question_7_1 + label::before, input[type="radio"]#id_question_10_1 + label::before,
+	input[type="radio"]#id_question_13_1 + label::before, input[type="radio"]#id_question_16_1 + label::before, input[type="radio"]#id_question_19_1 + label::before, input[type="radio"]#id_question_22_1 + label::before,
+	input[type="radio"]#id_question_25_1 + label::before, input[type="radio"]#id_question_28_1 + label::before, input[type="radio"]#id_question_31_1 + label::before, input[type="radio"]#id_question_34_1 + label::before,
+	input[type="radio"]#id_question_36_1 + label::before, input[type="radio"]#id_question_40_1 + label::before
+	{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f600.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(4.5) translate(120%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_2 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_2 + label::before, input[type="radio"]#id_question_4_2 + label::before, input[type="radio"]#id_question_7_2 + label::before, input[type="radio"]#id_question_10_2 + label::before,
+	input[type="radio"]#id_question_13_2 + label::before, input[type="radio"]#id_question_16_2 + label::before, input[type="radio"]#id_question_19_2 + label::before, input[type="radio"]#id_question_22_2 + label::before,
+	input[type="radio"]#id_question_25_2 + label::before, input[type="radio"]#id_question_28_2 + label::before, input[type="radio"]#id_question_31_2 + label::before, input[type="radio"]#id_question_34_2 + label::before,
+	input[type="radio"]#id_question_36_2 + label::before, input[type="radio"]#id_question_40_2 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f642.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(4.5) translate(110%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_3 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_3 + label::before, input[type="radio"]#id_question_4_3 + label::before, input[type="radio"]#id_question_7_3 + label::before, input[type="radio"]#id_question_10_3 + label::before,
+	input[type="radio"]#id_question_13_3 + label::before, input[type="radio"]#id_question_16_3 + label::before, input[type="radio"]#id_question_19_3 + label::before, input[type="radio"]#id_question_22_3 + label::before,
+	input[type="radio"]#id_question_25_3 + label::before, input[type="radio"]#id_question_28_3 + label::before, input[type="radio"]#id_question_31_3 + label::before, input[type="radio"]#id_question_34_3 + label::before,
+	input[type="radio"]#id_question_36_3 + label::before, input[type="radio"]#id_question_40_3 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f610.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(4.5) translate(72%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_4 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_4 + label::before, input[type="radio"]#id_question_4_4 + label::before, input[type="radio"]#id_question_7_4 + label::before, input[type="radio"]#id_question_10_4 + label::before,
+	input[type="radio"]#id_question_13_4 + label::before, input[type="radio"]#id_question_16_4 + label::before, input[type="radio"]#id_question_19_4 + label::before, input[type="radio"]#id_question_22_4 + label::before,
+	input[type="radio"]#id_question_25_4 + label::before, input[type="radio"]#id_question_28_4 + label::before, input[type="radio"]#id_question_31_4 + label::before, input[type="radio"]#id_question_34_4 + label::before,
+	input[type="radio"]#id_question_36_4 + label::before, input[type="radio"]#id_question_40_4 + label::before {
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f61e.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(4.5) translate(115%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
-	.form-check-label input[type="radio"]#id_id_question_1_0_5 {
-		/* position: relative; */
-		/* border: 1px solid gray; */
+
+	input[type="radio"]#id_question_1_5 + label::before, input[type="radio"]#id_question_4_5 + label::before, input[type="radio"]#id_question_7_5 + label::before, input[type="radio"]#id_question_10_5 + label::before,
+	input[type="radio"]#id_question_13_5 + label::before, input[type="radio"]#id_question_16_5 + label::before, input[type="radio"]#id_question_19_5 + label::before, input[type="radio"]#id_question_22_5 + label::before,
+	input[type="radio"]#id_question_25_5 + label::before, input[type="radio"]#id_question_28_5 + label::before, input[type="radio"]#id_question_31_5 + label::before, input[type="radio"]#id_question_34_5 + label::before,
+	input[type="radio"]#id_question_36_5 + label::before, input[type="radio"]#id_question_40_5 + label::before{
 		width: 1em;
 		height: 1em;
 		background:url('/static/admin/img/emoji/1f625.png') no-repeat;
 		/* Adjusts the position of the checkboxes on the text baseline */ 
 		vertical-align: -2px;
 		/* Set here so that Windows' High-Contrast Mode can override */
-		/* color: green; */
 		transform: scale(4.5) translate(53%, -70%);
 		background-size:100%;
-		/* transform: scale(10); */	
 	}
 	
-	#div_id_question_1 .form-check{
-		margin: 20% 0% 0% 7%;
-		transition: .3s;
-		font-size:0.7rem;
-	}
+	#div_id_question_1 .form-check, #div_id_question_4 .form-check, #div_id_question_7 .form-check, #div_id_question_10 .form-check,
+	#div_id_question_13 .form-check, #div_id_question_16 .form-check, #div_id_question_19 .form-check, #div_id_question_22 .form-check, 
+	#div_id_question_25 .form-check, #div_id_question_28 .form-check, #div_id_question_31 .form-check, #div_id_question_34 .form-check, 
+	#div_id_question_36 .form-check, #div_id_question_40 .form-check
+	{ margin: 20% 0% 0% 7%; transition: .3s; font-size:0.7rem; }
 
-	#div_id_question_1 .col-form-label{
-		margin-bottom:4%;
-	}
+	#div_id_question_2 .form-check, #div_id_question_5 .form-check, #div_id_question_8 .form-check, #div_id_question_11 .form-check,
+	#div_id_question_14 .form-check, #div_id_question_17 .form-check, #div_id_question_20 .form-check, #div_id_question_23 .form-check,
+	#div_id_question_26 .form-check, #div_id_question_29 .form-check, #div_id_question_32 .form-check, #div_id_question_35 .form-check,
+	#div_id_question_37 .form-check, #div_id_question_41 .form-check
+	{ font-size:1.5rem; margin:10px -1px; }
+
+	#div_id_question_3 .form-check, #div_id_question_6 .form-check, #div_id_question_9 .form-check, #div_id_question_12 .form-check,
+	#div_id_question_15 .form-check, #div_id_question_18 .form-check, #div_id_question_21 .form-check, #div_id_question_24 .form-check,
+	#div_id_question_27 .form-check, #div_id_question_30 .form-check, #div_id_question_33 .form-check, #div_id_question_38 .form-check,
+	#div_id_question_42 .form-check, #div_id_question_45 .form-check
+	{ font-size:1.2rem; }
+
+	#div_id_question_3 .form-check-input, #div_id_question_6 .form-check-input, #div_id_question_9 .form-check-input, #div_id_question_12 .form-check-input,
+	#div_id_question_15 .form-check-input, #div_id_question_18 .form-check-input, #div_id_question_21 .form-check-input, #div_id_question_24 .form-check-input,
+	#div_id_question_27 .form-check-input, #div_id_question_30 .form-check-input, #div_id_question_33 .form-check-input, #div_id_question_38 .form-check-input,
+	#div_id_question_42 .form-check-input, #div_id_question_45 .form-check-input
+	{ transform:scale(1.1) translate(-20%, 20%); }
 	
-	.col-form-label{
-		font-size:1rem;
-		margin:2% 0;
-	}
+	.btn-custom{ font-size: 100%; width:34%; right:-35%; }
 
-	#div_id_question_2 .form-check{
-		font-size:1.5rem;
-		margin:10px -1px;
-	}
+	.modal-dialog{ top:7%; }	
+	.modal-body h1{ font-size: 1.5rem; }
+	.modal-body .alert-para{ font-size: 1.1rem; }
+	.modal-body img{ transform: scale(0.7);	margin-top: -5%; }
+} 
+/*------------------------------------------*/
 
-	#div_id_question_3 .form-check{
-		font-size:1.2rem;
-	}
+/* Dashboard */
 
-	#div_id_question_3 .form-check-input{
-		transform:scale(1.1) translate(-20%, 20%);
-	}
+.dashboard-navbar .fa-home{
+	color:#F2A910;
+	font-size: 200%;
+}
 
-	
-	.btn-custom{
-		font-size: 100%;
-		width:34%;
-		right:-35%;
-	}
+.report-body{
+	background-color: #314060;
+	padding:0;
+	color: #DDDCF2;
+}
 
-	.modal-dialog{
-		top:7%; 
-	}
-	
-	.modal-body h1{
-		font-size: 1.5rem;
-	}
+.report-title span{
+	color: #F2A910;	
+}
 
-	.modal-body .alert-para{
-		font-size: 1.1rem;
-	}
+.report-voters li{
+	display: inline-block;
+	margin-right: 2%;
+	position: relative;
+	left: 60%;
+}
 
-	.modal-body img{
-		transform: scale(0.7);
-		margin-top: -5%;
-	}
+.report-voters span{
+	color: #8FC415;
+}
 
+.like-title span{
+	position: relative;
+	float: right;
 }

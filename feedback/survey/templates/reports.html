@@ -1,93 +1,239 @@
-{% extends 'base.html' %}
+{% extends 'dashboard_base.html' %}
 {% block extrajs %}
-<script>
-    $(document).ready(function(){
-        var endpoint = '/api/report/data/'
+<script>       
+        var segurl = window.location.href
+        var arr=segurl.split('/')
+        var endpoint = "/api/report/data/" + arr[4] // Segment URL Javascript 
         var defaultData = []
         var labels = []
         $.ajax({
             method: "GET",
             url: endpoint,
             success: function(data){
-                labels = data.labels
-                defaultData = data.default
-                var ctx = document.getElementById('myChart');
-                var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                    label: '# of Votes',
-                    data: defaultData,
-                    }]
-                }
-             })
-            },
+                labels = data[0].labels
+                defaultData = data[0].default
+                labels2 = data[1].labels
+                defaultData2 = data[1].default
+                labels3 = data[2].labels
+                defaultData3 = data[2].default
+                setChart()
+                
+        },
             error: function(error_data){
                 console.log("error")
                 console.log(error_data)
                }    
         })
 
-    var ctx = document.getElementById('myChart');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: '# of Votes',
-                data: defaultData,
-                backgroundColor: [
+        function setChart(){
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                    label: '# of Votes',
+                    data: defaultData,
+                    backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
                     'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
+                     ],                    
+                     borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
                     'rgba(153, 102, 255, 1)',
                     'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
+                    ],
+                    borderWidth: 1
+                    }]
+                },
         options: {
+            legend: {
+                labels: {
+                    fontColor: "#DDDCF2",
+                }
+            },
             scales: {
                 yAxes: [{
                     ticks: {
+                        fontColor: "#DDDCF2",
                         beginAtZero: true
-                    }
-                }]
+                        },
+                    gridLines: {
+                        color:"rgb(255, 255, 255, 0.3)",
+                        zeroLineColor: "rgb(255, 255, 255, 0.3)"
+                        }
+                    }],
+
+                xAxes: [{
+                    ticks: {
+                        fontColor: "white",   
+                    },        
+                    gridLines: {
+                        color:"rgb(255, 255, 255, 0.3)",
+                        zeroLineColor: "rgb(255, 255, 255, 0.3)"
+                        }
+                    }]
+                }
             }
-        }
-    })
-    });
-    </script>
+        });
+        var ctx2 = document.getElementById('myChart2');
+            var myChart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: labels2,
+                    datasets: [{
+                    label: '# of Votes',
+                    data: defaultData2,
+                    backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                     ],                    
+                     borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                    }]
+                },
+        options: {
+            legend: {
+                labels: {
+                    fontColor: "#DDDCF2",
+                }
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        fontColor: "#DDDCF2",
+                        beginAtZero: true
+                        },
+                    gridLines: {
+                        color:"rgb(255, 255, 255, 0.3)",
+                        zeroLineColor: "rgb(255, 255, 255, 0.3)"
+                        }
+                    }],
+
+                xAxes: [{
+                    ticks: {
+                        fontColor: "white",   
+                    },        
+                    gridLines: {
+                        color:"rgb(255, 255, 255, 0.3)",
+                        zeroLineColor: "rgb(255, 255, 255, 0.3)"
+                        }
+                    }]
+                }
+            }
+        });
+        var ctx3 = document.getElementById('myChart3');
+            var myChart = new Chart(ctx3, {
+                type: 'bar',
+                data: {
+                    labels: labels3,
+                    datasets: [{
+                    label: '# of Votes',
+                    data: defaultData3,
+                    backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                     ],                    
+                     borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                    }]
+                },
+        options: {
+            legend: {
+                labels: {
+                    fontColor: "#DDDCF2",
+                }
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        fontColor: "#DDDCF2",
+                        beginAtZero: true
+                        },
+                    gridLines: {
+                        color:"rgb(255, 255, 255, 0.3)",
+                        zeroLineColor: "rgb(255, 255, 255, 0.3)"
+                        }
+                    }],
+
+                xAxes: [{
+                    ticks: {
+                        fontColor: "white",   
+                    },        
+                    gridLines: {
+                        color:"rgb(255, 255, 255, 0.3)",
+                        zeroLineColor: "rgb(255, 255, 255, 0.3)"
+                        }
+                    }]
+                }
+            }
+        });
+     }
+
+     
+
+</script>
 {% endblock %}
 {% block body %}
-<div url-endpoint="{% url 'api-data' %}">
-    <h1>Reports</h1>
-    <div>
-        <h1>Sample</h1>
+    <div class="report-body container-fluid">
+    <div class="container">
+    <div class="report-title">
+        {% if department %}
+            <h1>{{ department.name }} | <span>Reports</span></h1> 
+        {% endif %}       
+    </div>
+    {% if qs_list %}
+        <p>{{ qs_list }}</p>
+    {% endif %}
+    {% if qs_new %}
+        <p>{{ qs_new }}</p>
+    {% endif %}
+    <div class="report-voters">
         {% if response_list %}
             <ul>    
             {% for response in response_list %}
-                <li>{{ response.answerradio.body }}</li>         
+                <li> {{ response.body|default_if_none:"--" }}: <span>{{ response.counts|default_if_none:"--" }}</span></li>         
             {% endfor %}
             </ul>
         {% endif %}
     </div>
     <div class="container">
-        {% for i in counts %}
-                <li>{{ i.questionnaire }}</li>
-        {% endfor %}
-        </ul>
+        <div class="row">
+        <canvas id="myChart" class="col-md-6"></canvas>
+        <canvas id="myChart2" class="col-md-6"></canvas>
+        <canvas id="myChart3" class="col-md-6"></canvas>
+        </div>
     </div>
-    <canvas id="myChart" width="900" height="400"></canvas>
+        <!-- <p class="like-title">Very Likely<span>Very Unlikely</span></p> -->
+</div>
 </div>
 {% endblock %}

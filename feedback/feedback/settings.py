@@ -27,7 +27,7 @@ SECRET_KEY = '#h2_dk$tkutx01*yjb+z1r=p5#2rfpw_i1f+m6o93830krmek#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.feedback.local', 'feedback.local']
+ALLOWED_HOSTS = ['www.amcsurvey.local', 'amcsurvey.local', '195.68.3.60:8002', '195.68.3.60']
 
 
 # Application definition
@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'surveydatabase',
         'USER': 'admin',
-        'PASSWORD': 'password101',
+        'PASSWORD': 'password@101',
         'HOST': 'localhost',
         'PORT': '',
     }
