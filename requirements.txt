@@ -13,7 +13,7 @@ click==5.1
 configparser==3.5.0
 decorator==4.1.2
 dominate==2.3.1
-ecdsa==0.13
+ecdsa==0.13.3
 enum34==1.1.6
 Flask==1.0.2
 Flask-Bootstrap==3.3.7.1
