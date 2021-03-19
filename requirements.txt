@@ -46,7 +46,7 @@ netifaces==0.10.6
 olefile==0.44
 paramiko==1.16.0
 pexpect==4.0.1
-Pillow==4.2.1
+Pillow==8.1.1
 ptyprocess==0.5
 pycodestyle==2.3.1
 pycrypto==2.6.1
